@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Download Code') {
+            steps {
+                echo 'Inside Micro 2'
+                echo 'Pulling... ' + env.GIT_BRANCH
+                echo 'Pulling... ' + env.GIT_URL
+            }
+        }
+    }
+}
